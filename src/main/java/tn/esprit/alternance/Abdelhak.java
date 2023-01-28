@@ -1,4 +1,4 @@
 package tn.esprit.alternance;
 
-public class abdelhak {
+public class Abdelhak {
 }
