@@ -2,7 +2,7 @@ package tn.esprit.alternance;
 
 import java.util.Objects;
 
-public class Employe {
+public class Employe implements Comparable<Employe>{
 	 private int cin;
 	    private int matricule;
 	    private String nom , prenom;
@@ -92,6 +92,10 @@ public class Employe {
 	    public String toString() {
 	        return "Employe{" + "cin=" + cin + ", matricule=" + matricule + ", nom=" + nom + ", prenom=" + prenom + '}';
 	    }
+
+		public int compareTo(Employe o) {
+			return this.cin-o.cin;
+		}
 	    
 	
 
