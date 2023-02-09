@@ -1,5 +1,7 @@
 package tn.esprit.alternance;
 
+import java.util.Objects;
+
 public class Employe {
 	 private int cin;
 	    private int matricule;
@@ -48,41 +50,43 @@ public class Employe {
 	    }
 
 	    @Override
-		public int hashCode() {
-			final int prime = 31;
-			int result = 1;
-			result = prime * result + cin;
-			result = prime * result + matricule;
-			result = prime * result + ((nom == null) ? 0 : nom.hashCode());
-			result = prime * result + ((prenom == null) ? 0 : prenom.hashCode());
-			return result;
-		}
+	    public int hashCode() {
+	        int hash = 5;
+	        hash = 53 * hash + this.cin;
+	        hash = 53 * hash + this.matricule;
+	        hash = 53 * hash + Objects.hashCode(this.nom);
+	        hash = 53 * hash + Objects.hashCode(this.prenom);
+	        return hash;
+	    }
 
-		@Override
-		public boolean equals(Object obj) {
-			if (this == obj)
-				return true;
-			if (obj == null)
-				return false;
-			if (getClass() != obj.getClass())
-				return false;
-			Employe other = (Employe) obj;
-			if (cin != other.cin)
-				return false;
-			if (matricule != other.matricule)
-				return false;
-			if (nom == null) {
-				if (other.nom != null)
-					return false;
-			} else if (!nom.equals(other.nom))
-				return false;
-			if (prenom == null) {
-				if (other.prenom != null)
-					return false;
-			} else if (!prenom.equals(other.prenom))
-				return false;
-			return true;
-		}
+	   
+
+	    @Override
+	    public boolean equals(Object obj) {
+	        if (this == obj) {
+	            return true;
+	        }
+	        if (obj == null) {
+	            return false;
+	        }
+	        if (getClass() != obj.getClass()) {
+	            return false;
+	        }
+	        final Employe other = (Employe) obj;
+	        if (this.cin != other.cin) {
+	            return false;
+	        }
+	        if (this.matricule != other.matricule) {
+	            return false;
+	        }
+	        if (!Objects.equals(this.nom, other.nom)) {
+	            return false;
+	        }
+	        if (!Objects.equals(this.prenom, other.prenom)) {
+	            return false;
+	        }
+	        return true;
+	    }
 
 		@Override
 	    public String toString() {
