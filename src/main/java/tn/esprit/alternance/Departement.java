@@ -47,6 +47,26 @@ public class Departement {
         return "Departement{" + "idDept=" + idDept + ", nomDept=" + nomDept + '}';
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Departement other = (Departement) obj;
+        if (this.idDept != other.idDept) {
+            return false;
+        }
+        if (!Objects.equals(this.nomDept, other.nomDept)) {
+            return false;
+        }
+        return true;
+    }
    
     
 }
