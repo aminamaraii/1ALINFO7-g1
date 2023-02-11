@@ -13,6 +13,7 @@ public class Main {
        System.out.println(dept2);
        System.out.println(dept3);
        System.out.println(dept4);
+<<<<<<< HEAD
        
        System.out.println("*****************");
        
@@ -27,6 +28,9 @@ public class Main {
        System.out.println(emp3);
        System.out.println(emp4);
        System.out.println(emp5);
+=======
+      
+>>>>>>> main
     }
 
 }
