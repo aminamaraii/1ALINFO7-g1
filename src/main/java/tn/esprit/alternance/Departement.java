@@ -48,6 +48,13 @@ public class Departement {
     }
 
     @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 59 * hash + this.idDept;
+        hash = 59 * hash + Objects.hashCode(this.nomDept);
+        return hash;
+    }
+    @Override
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
