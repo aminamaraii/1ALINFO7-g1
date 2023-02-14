@@ -20,23 +20,4 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
 	</natures>
-	<filteredResources>
-		<filter>
-<<<<<<< HEAD
-<<<<<<< HEAD
-			<id>1676413932905</id>
-=======
-			<id>1676411726752</id>
->>>>>>> 31fc184e41e89d001f627c3a3b9a592ac8a880f1
-=======
-			<id>1676411569171</id>
->>>>>>> amina_branch
-			<name></name>
-			<type>30</type>
-			<matcher>
-				<id>org.eclipse.core.resources.regexFilterMatcher</id>
-				<arguments>node_modules|\.git|__CREATED_BY_JAVA_LANGUAGE_SERVER__</arguments>
-			</matcher>
-		</filter>
-	</filteredResources>
 </projectDescription>

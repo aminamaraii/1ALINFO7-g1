@@ -8,7 +8,7 @@ public class Main {
         Departement dept3 = new Departement(3, "departement 3");
         Departement dept4 = new Departement(4, "departement 4");
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
        System.out.println(dept1);
        System.out.println(dept2);
        System.out.println(dept3);
@@ -31,7 +31,7 @@ public class Main {
 //=======
       
 //>>>>>>> main
-=======
+//=======
         System.out.println(dept1);
         System.out.println(dept2);
         System.out.println(dept3);
@@ -72,7 +72,7 @@ public class Main {
         System.out.println(shm.rechercherDepartement(dept4));
         System.out.println("---------------- Rechercher Departement d'un employe --------------------");
         System.out.println(shm.rechercherEmploye(emp5));
->>>>>>> 31fc184e41e89d001f627c3a3b9a592ac8a880f1
+//>>>>>>> 31fc184e41e89d001f627c3a3b9a592ac8a880f1
     }
 
 }
