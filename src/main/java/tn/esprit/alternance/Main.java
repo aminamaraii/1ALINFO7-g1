@@ -1,5 +1,4 @@
 package tn.esprit.alternance;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -13,7 +12,7 @@ public class Main {
        System.out.println(dept2);
        System.out.println(dept3);
        System.out.println(dept4);
-<<<<<<< HEAD
+//<<<<<<< HEAD
        
        System.out.println("*****************");
        
@@ -28,9 +27,9 @@ public class Main {
        System.out.println(emp3);
        System.out.println(emp4);
        System.out.println(emp5);
-=======
+//=======
       
->>>>>>> main
+//>>>>>>> main
     }
 
 }
